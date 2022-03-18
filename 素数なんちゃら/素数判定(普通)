@@ -1,0 +1,14 @@
+b=0
+a=input()
+
+if int(a)<2:
+    print(“non”)
+
+while True:
+    b+=1
+    if int(a)%b==0:
+        print(“non”)
+        break
+    elif b==int(a)-1:
+        print(“o”)
+        break
