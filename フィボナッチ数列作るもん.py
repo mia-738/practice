@@ -1,3 +1,5 @@
+import os
+
 a=""
 b=""
 c=0
@@ -7,7 +9,7 @@ while True:
     a=input()
     b=input()
     if int(a)<0 or int(b)<0:
-        print("整数を入力してください")
+        print("\n\"整数を\"入力してください\n")
     else:
         break
 
@@ -17,3 +19,6 @@ while int(d)<50:
     a=b
     b=c
     d+=1
+
+print("")
+os.system('PAUSE')
