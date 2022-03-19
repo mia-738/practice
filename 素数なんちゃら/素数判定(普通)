@@ -1,14 +1,31 @@
-b=0
-a=input()
-
-if int(a)<2:
-    print(“non”)
+import re
+import os
+b=1
 
 while True:
-    b+=1
-    if int(a)%b==0:
-        print(“non”)
+    a=input()
+
+    if re.compile('[a-z]+').fullmatch(a):
+
+        print("\n数を入力してください\n")
+
+    else:
         break
-    elif b==int(a)-1:
-        print(“o”)
-        break
+
+
+if int(a)<2:
+    print("non")
+elif int(a)==2:
+    print("o")
+
+else:
+    while True:
+        b+=1
+        if int(a)%b==0:
+            print("non")
+            break
+        elif b==int(a)-1:
+            print("o")
+            break
+
+os.system('PAUSE')
