@@ -17,16 +17,17 @@ elif int(a)%2==0:
     f=0
 else:
     b=math.floor(math.sqrt(int(a)))
-    while x<=b:
+    while True:
         x+=2
         if int(a)%x==0:
             f=0
             break
-        else:
+        elif x>=b:
             f=1
             break
 if f==0:
     print("素数ではない")
-else:
+elif f==1:
     print("素数")
+    print(x)
 os.system('PAUSE')
