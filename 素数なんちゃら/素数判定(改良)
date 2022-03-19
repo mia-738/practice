@@ -5,11 +5,8 @@ f=""
 x=1
 while True:
     a=input()
-
     if re.compile('[a-z]+').fullmatch(a):
-
         print("\n数を入力してください\n")
-
     else:
         break
 if int(a)<=1:
