@@ -29,5 +29,4 @@ if f==0:
     print("素数ではない")
 elif f==1:
     print("素数")
-    print(x)
 os.system('PAUSE')
