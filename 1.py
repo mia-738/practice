@@ -1,3 +1,4 @@
+import re
 import random
 import math
 import os
@@ -14,16 +15,17 @@ f=0
 
 while True:
     a=input()
-    if str.isdigit(a):
+    if re.compile('[a-z]+').fullmatch(a):
 
+        print("\n数を入力してください\n")
+
+    else:
         if int(a)<0:
+          
             print("\n整数を入力してください\n")
         
         else:
             break
-
-    else:
-        print("\n数を入力してください\n")
 
 b=math.floor(random.random()*1000000001)
 c<<=len(bin(b))-18
