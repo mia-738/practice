@@ -5,7 +5,7 @@
 
 ## 注意
 
-- pyファイルをColaboratoryで実行するときは`os.system('PAUSE')`を削除してください。
+- pyファイルをColaboratoryで実行するときは`os.system('PAUSE')`を削除してください。（削除しないと謎の数字が表示されます）
 
 
 ## その他
