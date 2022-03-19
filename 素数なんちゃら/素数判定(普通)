@@ -14,18 +14,18 @@ while True:
 
 
 if int(a)<2:
-    print("non")
+    print("素数ではない")
 elif int(a)==2:
-    print("o")
+    print("素数")
 
 else:
     while True:
         b+=1
         if int(a)%b==0:
-            print("non")
+            print("素数ではない")
             break
         elif b==int(a)-1:
-            print("o")
+            print("素数")
             break
 
 os.system('PAUSE')
