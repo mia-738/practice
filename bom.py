@@ -10,7 +10,7 @@ for x in l:
         if int(x) % i == 0:
             t += i
             if i * i != x:
-                s = round(int(x) / i)
+                s = int(x) // i
                 if i != s:
                     t += s
         i = i + 1
