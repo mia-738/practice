@@ -1,0 +1,3 @@
+csc *.cs
+pause
+exit

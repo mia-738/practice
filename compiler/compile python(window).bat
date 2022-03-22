@@ -1,0 +1,1 @@
+pyinstaller python*.py --noconsole

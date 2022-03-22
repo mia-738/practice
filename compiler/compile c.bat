@@ -1,0 +1,3 @@
+gcc *.c
+pause
+exit
