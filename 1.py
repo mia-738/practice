@@ -1,64 +1,32 @@
-import re
 import random
-import math
-import os
-
-a=""
-bina=0
-b=""
-b1=""
-c=65535
-c1=65535
-d=0
-d1=0
-e=0
-f=0
-f1=0
-
-while True:
-    a=input()
-    if re.compile('[a-z]+').fullmatch(a):
-
-        print("\n数を入力してください\n")
-
-    else:
-        if int(a)<0:
-          
-            print("\n整数を入力してください\n")
-        
-        else:
+a=random.randrange(1,150)
+b=random.randrange(0,100)
+d=random.randrange(0,100)
+x=160
+c_hp=1500
+m_hp=1500
+while c_hp!=0 or m_hp!=0:
+    print("敵のHP:"+str(c_hp)+"\n自分のHP:"+str(m_hp))
+    print("威力"+str(a)+"命中率"+str(b)+"の技が使える。\n攻撃しますか？")
+    print("攻撃:1  守る:2")
+    while True:
+        c=int(input())
+        if c==1:
+            if c<f:
+                m_hp=m_hp-x
+                print("\n外れた!!\n")
+                break
+            else:
+                c_hp=c_hp-a
+                print("当たった!!")
+                break
+        if c==2:
+            print("敵の攻撃をよけた!!")
             break
-
-b1=10**random.randrange(0,20)+1
-b=math.floor(random.random()*b1)
-
-if len(bin(int(b)))<len(bin(int(c))):
-    c>>=18-len(bin(b))
+    a=123*a%150
+    b=123*b%100
+    d=123*d%100
+if c_hp==0:
+    print("\n勝った!!")
 else:
-    c<<=len(bin(b))-18
-    f=1
-
-d=b&c
-
-if f==1:
-    d>>=len(bin(b))-18
-
-bina=bin(int(a))
-
-if len(bin(int(a)))<len(bin(int(c1))):
-    c1>>=18-len(bina)
-else:
-    c1<<=len(bina)-18
-    f1=1
-
-d1=int(a)&c1
-
-if f1==1:
-    d1>>=len(bina)-18
-
-e=d^d1
-
-print(bin(e))
-print(e)
-
-os.system('PAUSE')
+    print("\n負けた!!")
