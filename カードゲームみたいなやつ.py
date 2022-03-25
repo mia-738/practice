@@ -1,3 +1,4 @@
+import os
 import random
 a=random.randrange(1,150)
 b=random.randrange(0,100)
@@ -39,3 +40,4 @@ if c_hp==0:
     print("\n勝った!!")
 else:
     print("\n負けてしまった!!")
+os.system('PAUSE')
