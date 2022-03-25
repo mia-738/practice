@@ -3,17 +3,19 @@ a=random.randrange(1,150)
 b=random.randrange(0,100)
 c=random.randrange(0,100)
 d=3
+e=0
 x=160
 c_hp=2100
 m_hp=2100
 while c_hp!=0 or m_hp!=0:
     print("敵のHP:"+str(c_hp)+"\n自分のHP:"+str(m_hp))
     print("威力"+str(a)+"命中率"+str(b)+"の技が使える。\n攻撃しますか？")
-    print("攻撃:1 守る:2(後+"d"+回)")
+    print("攻撃:1 守る:2(あと"+d+"回)")
     while True:
         act=int(input())
         if d==0:
             act=1
+            e=1
         if act==1:
             if b<c:
                 m_hp=m_hp-x
@@ -30,6 +32,9 @@ while c_hp!=0 or m_hp!=0:
     a=123*a%150
     b=123*b%100
     c=123*c%100
+    if e==1:
+        d=3
+        e=0
 if c_hp==0:
     print("\n勝った!!")
 else:
