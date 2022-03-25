@@ -11,13 +11,14 @@ m_hp=2100
 while c_hp!=0 or m_hp!=0:
     print("敵のHP:"+str(c_hp)+"\n自分のHP:"+str(m_hp))
     print("威力"+str(a)+"命中率"+str(b)+"の技が使える。\n攻撃しますか？")
-    print("攻撃:1 守る:2(あと"+d+"回)")
+    print("攻撃:1 守る:2(あと"+str(d)+"回)")
     while True:
         act=int(input())
         if d==0:
             act=1
             e=1
         if act==1:
+            d=3
             if b<c:
                 m_hp=m_hp-x
                 print("\n外れた!!\n")
