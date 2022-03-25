@@ -3,15 +3,14 @@ import random
 import math
 import os
 
+b=int(random.randrange(0,65535))
 f=0
+x=3
 
 while f<3
     a=""
     a1=""
-    b=""
     c=""
-    d=""
-
 
     while True:
         a1=input()
@@ -28,8 +27,6 @@ while f<3
                 a=int(a1)
                 break
 
-    b=int(random.randrange(0,65535))
-
     c=(a^b)//256
     if c%x==0:
         print("You Won!!!")
@@ -38,5 +35,5 @@ while f<3
     else:
         print("You Lose!!!")
         break
-
+    b=(47265*b)%(2**16)
 os.system('PAUSE')
