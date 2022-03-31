@@ -7,7 +7,7 @@ b=int(random.randrange(0,65535))
 f=0
 x=3
 
-while f<3
+while f<3:
     a=""
     a1=""
     c=""
@@ -31,9 +31,7 @@ while f<3
     if c%x==0:
         print("You Won!!!")
         f+=1
-        break
     else:
         print("You Lose!!!")
-        break
     b=(47265*b)%(2**16)
 os.system('PAUSE')
