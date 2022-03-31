@@ -37,8 +37,8 @@ while c_hp!=0 or m_hp!=0:
     if e==1:
         d=3
         e=0
-if c_hp==0:
+if c_hp>=0:
     print("\n勝った!!")
-else:
+elif m_hp>=0:
     print("\n負けてしまった!!")
 os.system('PAUSE')
