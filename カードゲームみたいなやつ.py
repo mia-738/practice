@@ -15,6 +15,7 @@ while c_hp!=0 or m_hp!=0:
     while True:
         act=int(input())
         if d==0:
+            print("威力"+str(a)+"命中率"+str(b)+"の技を使った!!")
             act=1
             e=1
         if act==1:
