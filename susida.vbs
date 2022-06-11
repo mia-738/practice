@@ -4,6 +4,6 @@ Dim a
 a = 0
 Do Until a = 600
 WScript.Sleep (100)
-WshShell.SendKeys "{F5}"
+  WshShell.SendKeys "abcdefghijklmnopqrstuvwxyz"
 a = a + 1
 Loop 
