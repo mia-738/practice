@@ -1,6 +1,5 @@
 set WshShell = WScript.CreateObject("WScript.Shell")
 WScript.Sleep (3000)
-
 Dim a
 a = 0
 
