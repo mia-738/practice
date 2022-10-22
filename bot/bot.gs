@@ -1,7 +1,7 @@
 // 認証用インスタンス
 var twitter = TwitterWebService.getInstance(
-  'XXXXX',       // 作成したアプリケーションのConsumer Key
-  'XXXXX'  // 作成したアプリケーションのConsumer Secret
+  'XXXXX',       // Consumer Key
+  'XXXXX'  　　　// Consumer Secret Key
 );
 
 // 認証
