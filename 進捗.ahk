@@ -1,13 +1,13 @@
 #SingleInstance
   SetTimer, rChangeButtonNames, 50
-  MsgBox, 0x4, i’», i’»‚¾‚ß‚Å‚·
+  MsgBox, 0x4, é€²æ—, é€²æ—ã ã‚ã§ã™
 return
  
 rChangeButtonNames: 
-  IfWinNotExist, i’»
-    return ; MsgBox ‚ª•\¦‚³‚ê‚é‚Ì‚ğ‘Ò‚¿‚Ü‚·
+  IfWinNotExist, é€²æ—
+    return ;
   SetTimer, rChangeButtonNames, Off
   WinActivate
-  ControlSetText, Button1, —¹‰ğ(&A)
-  ControlSetText, Button2, ‚Í‚¢(&D)
+  ControlSetText, Button1, äº†è§£(&A)
+  ControlSetText, Button2, ã¯ã„(&D)
 return
