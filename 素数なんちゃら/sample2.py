@@ -1,3 +1,5 @@
+#Miller-Rabin素数判定法
+
 import random
 
 def is_prime(n, k=10):
