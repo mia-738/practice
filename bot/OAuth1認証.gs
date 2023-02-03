@@ -38,10 +38,6 @@ var Twitter = {
       .setConsumerKey(this.parent.consumerKey)
       .setConsumerSecret(this.parent.consumerSecret)
       
-      // Set the project key of the script using this library.
-      .setProjectKey(this.parent.projectKey)
-      
-      
       // Set the name of the callback function in the script referenced
       // above that should be invoked to complete the OAuth flow.
       .setCallbackFunction('twitterAuthorizeCallback')
