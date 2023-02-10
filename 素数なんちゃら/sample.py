@@ -8,5 +8,3 @@ def sieve_of_eratosthenes(n):
             for j in range(i * i, n + 1, i):
                 primes[j] = False
     return [x for x in range(n + 1) if primes[x]]
-
-print(sieve_of_eratosthenes(1000000))
