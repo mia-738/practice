@@ -2,7 +2,7 @@
 
 import random
 
-def is_prime(n, k=10):
+def Miller_Rabin(n, k=10):
     if n <= 1:
         return False
     if n <= 3:
