@@ -2,7 +2,7 @@
 
 import random
 
-def Miller_Rabin(n, k=10):
+def miller_rabin(n, k=10):
     if n <= 1:
         return False
     if n <= 3:
