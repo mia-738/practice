@@ -1,8 +1,6 @@
 import math
 
-def is_prime(a):
-    f=""
-    x=1
+def is_prime(a,x=1):
     
     if a<=1:
         return False
