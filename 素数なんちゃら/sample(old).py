@@ -1,5 +1,4 @@
-def prime(a):
-    b=1
+def prime(a,b=1):
 
     if a<2:
         return False
