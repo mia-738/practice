@@ -1,21 +1,27 @@
-l = [0]
-for x in l:
-    print(x, '\r', end = "")
+def p_number(num):
 
-    i = 1
-    t = 0
-    if int(x) < 1:
-        t += x
-    while i * i <= int(x):
-        if int(x) % i == 0:
-            t += i
-            if i * i != x:
-                s = int(x) // i
-                if i != s:
-                    t += s
-        i = i + 1
+    while True:
 
-    if t-x == x:
-        print()
+        l = [1]
+        f = []
+        for x in l:
+
+            i = 1
+            t = 0
+            if x < 1:
+                 t += x
+            while i * i <= x:
+                if x % i == 0:
+                     t += i
+                     if i * i != x:
+                         s = x // i
+                         if i != s:
+                             t += s
+                i = i + 1
+
+            if t-x == x:
+                f.append(x)
+                if len(f) == num:
+                    return f
         
-    l.append(x+1)
+            l.append(x+1)
